@@ -1,0 +1,30 @@
+/home/noemi/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.3/lib/ghc-8.8.3/include/ghcversion.h:
+  hash: 40d1b759f485f1cd5a54141a6412691ac2b76930507289a16a6a7b89b045b4d2
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/autogen/Paths_TP4.hs:
+  hash: 39a9761a5c02921db4b7b93f4189d6b0bfae003d53b0d6e44584b44fe9448bed
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/autogen/cabal_macros.h:
+  hash: a5acf4925e2a52d566f688681c1d678646c6117e79c3e03cd8645ece5e0d1dc1
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/ChangeLog.md:
+  hash: 2988da173f5da20cdf97238775211e1f9a9d287b30af970ba3eff4acac848fe0
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/README.md:
+  hash: fe95c0d5d3071fe892649d0c1ae40b8fdd819783b9e4db918a554c3cba148783
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/TP4.cabal:
+  hash: 3f9924287e9e768ab58ab72f6d1e0947d1696feaed17376dd2130b7afd5c759c
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/package.yaml:
+  hash: 2b26884f82e8c52ee8d76e1cf6b1a3e0207b43c0b138e3a9cc379c058c44c320
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/src/AST.hs:
+  hash: 9bf534208438062aa1d4be79afbfecabc9e56bc25fa58dab72fb78948795893a
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Eval1.hs:
+  hash: c853210c70ca43453822a1d1e55f79b5112a29bf85bbc0b3d0f54d33f0cbd3c1
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Eval2.hs:
+  hash: a8734780fc2f8db07c1320ac9d4f2709152dc012ed25a49584569ec2f8e8b7e3
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Eval3.hs:
+  hash: 260e5c50a46f10d23851c9740673067d387f756f7696d8679f1dc19111e0d7c8
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Monads.hs:
+  hash: 6576bce5cd70ffab9213e3aa6812632d0a83874755f30ffa0e38c69876d2bc59
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/src/PPLis.hs:
+  hash: c6c217b83187275c27e2546efc406be7f6d3e3546eb21acb9b926067a347b929
+/home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Parser.hs:
+  hash: ece8ed35f8ba6a22f7d39ee00c6a2ed95265c7830013a93c7160cf021004df23
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
