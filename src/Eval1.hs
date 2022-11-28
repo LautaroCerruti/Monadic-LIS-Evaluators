@@ -86,3 +86,8 @@ evalExp (NEq e1 e2) = liftM2 (/=) (evalExp e1) (evalExp e2)
 evalExp (And e1 e2) = liftM2 (&&) (evalExp e1) (evalExp e2)
 evalExp (Or e1 e2) = liftM2 (||) (evalExp e1) (evalExp e2)
 evalExp (Not e1) = liftM (not) (evalExp e1)
+evalExp (EAssgn x e) = do v <- evalExp e
+                          update x v
+                          return v
+evalExp (ESeq e1 e2) = do evalExp e1
+                          evalExp e2

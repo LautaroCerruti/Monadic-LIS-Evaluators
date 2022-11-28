@@ -23,9 +23,6 @@ data Exp a where
   Not ::Exp Bool -> Exp Bool
   Eq ::Exp Int -> Exp Int -> Exp Bool
   NEq ::Exp Int -> Exp Int -> Exp Bool
-  -- Agregamos estas expresiones porque el parser 
-  -- y el pretty printer rompian, pero supusimos que no habia 
-  -- que agregarlas a los evaluadores
   EAssgn :: Variable -> Exp Int -> Exp Int
   ESeq :: Exp Int -> Exp Int -> Exp Int
 

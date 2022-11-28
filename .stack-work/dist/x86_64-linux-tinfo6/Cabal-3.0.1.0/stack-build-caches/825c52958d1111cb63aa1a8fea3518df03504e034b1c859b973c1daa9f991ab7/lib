@@ -13,13 +13,13 @@
 /home/noemi/Escritorio/Monadic-LIS-Evaluators/package.yaml:
   hash: 2b26884f82e8c52ee8d76e1cf6b1a3e0207b43c0b138e3a9cc379c058c44c320
 /home/noemi/Escritorio/Monadic-LIS-Evaluators/src/AST.hs:
-  hash: 43ad81d644a06bf5028c65d25b408f022b609c8e3acc1c2add6551cbaebf9006
+  hash: 9bf534208438062aa1d4be79afbfecabc9e56bc25fa58dab72fb78948795893a
 /home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Eval1.hs:
-  hash: c853210c70ca43453822a1d1e55f79b5112a29bf85bbc0b3d0f54d33f0cbd3c1
+  hash: cb73c7c6d81c254a03d3115dae2483221da64c63305606d2b8a850363097d88e
 /home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Eval2.hs:
-  hash: b24ad6bbd7aebf0add33a56274b5d3aceda66c420c797052d3b5c5c33b2a296c
+  hash: 564f8b90ea0765f14ee229079144762f600646d0ae5721dfdcf0489223365657
 /home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Eval3.hs:
-  hash: 3df60e4763e86fccf819c85f3abe027150010525a9c0c4c99937a34dfbf3cc9c
+  hash: 6a8f2b247f537e743bb813bc39f64c9368d6a60dc515437304cab5456a2be8f2
 /home/noemi/Escritorio/Monadic-LIS-Evaluators/src/Monads.hs:
   hash: ab63cf4b332fedf27f4dab349a4fce09e30b1f90aae7885cabeb1c547160e1fd
 /home/noemi/Escritorio/Monadic-LIS-Evaluators/src/PPLis.hs:

@@ -58,7 +58,7 @@ instance MonadState StateErrorTrace where
   lookfor v = StateErrorTrace (\s -> case M.lookup v s of
                               Nothing -> Left UndefVar :!: ("Variable " ++ show v ++ " not defined\n\n")
                               Just val -> Right (val :!: s) :!: "")
-  update v i = StateErrorTrace (\s -> (Right (() :!: update' v i s)) :!: "") where update' = M.insert
+  update v i = StateErrorTrace (\s -> (Right (() :!: update' v i s)) :!: "Set " ++ show v ++ " = " ++ show i ++ "\n\n") where update' = M.insert
 
 -- Ejercicio 3.f: Implementar el evaluador utilizando la monada StateErrorTrace.
 -- Evalua un programa en el estado nulo
@@ -85,7 +85,6 @@ stepComm w@(While bool e) = do bval <- evalExp bool
                                addTrace ("In while " ++ show bool ++ " evaluated " ++ show bval ++ "\n\n")
                                if bval then return (Seq e w) else return Skip
 stepComm (Let x e) = do val <- evalExp e
-                        addTrace ("let " ++ show x ++ " = " ++ show val ++ "\n\n")
                         update x val
                         return Skip
 
@@ -111,3 +110,8 @@ evalExp (NEq e1 e2) = liftM2 (/=) (evalExp e1) (evalExp e2)
 evalExp (And e1 e2) = liftM2 (&&) (evalExp e1) (evalExp e2)
 evalExp (Or e1 e2) = liftM2 (||) (evalExp e1) (evalExp e2)
 evalExp (Not e1) = liftM (not) (evalExp e1)
+evalExp (EAssgn x e) = do v <- evalExp e
+                          update x v
+                          return v
+evalExp (ESeq e1 e2) = do evalExp e1
+                          evalExp e2
