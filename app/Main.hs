@@ -2,6 +2,7 @@ module Main where
 
 import           Parser                         ( parseComm )
 import           System.Console.GetOpt
+import           Data.Strict.Tuple
 import qualified System.Environment            as Env
 import           System.Exit
 import           Control.Monad                  ( when )
@@ -69,6 +70,8 @@ runOptions fp opts
         | optPrint opts     -> putStrLn (renderComm ast)
         | optEval opts == 1 -> print (E1.eval ast)
         | optEval opts == 2 -> print (E2.eval ast)
---        | optEval opts == 3 -> print (E3.eval ast)
+        | optEval opts == 3 -> (let (x :!: tr) = E3.eval ast
+                                in do putStrLn tr
+                                      print x)
         | otherwise         -> print (E1.eval ast)
 
